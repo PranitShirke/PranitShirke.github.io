@@ -1,0 +1,246 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>P_paralax</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">       
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   	<style>
+		body{
+			background-color:black;
+		}
+		.skewedbox{ 
+			padding:0px;
+			background-color:yellow;
+			transfrom: skew(0deg, -10deg) translateY(-20px);
+			-webkit-transform:skew(0deg, -10deg) translateY(-20px);
+   			-ms-transform:skew(0deg, -10deg) translateY(-20px); 
+ 
+		}
+		.text{
+			padding:100px;
+			transfrom: skew(0deg, 10deg) ;
+			-webkit-transform:skew(0deg, 10deg) ;
+   			-ms-transform:skew(0deg, 10deg) ; 
+ 
+		
+		}
+		.section2{
+			position:relative;
+			padding:100px;
+			color:white;
+		}
+		.cardbox{
+			
+  margin:15px;
+				width:150px;
+			height:150px;
+		}
+		.card{
+			position:relative;
+			width:150px;
+			height:150px;
+			background:yellow;
+			 -webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+   
+			transfrom-style:preserve-3d;
+			transition: .5s ease;
+			box-shadow: 0 30px 30px rgba(0,0,0, .5);
+		}
+		.cardfront , .cardback{
+			position:absolute;
+			top: 0;
+			left:0;
+			width:150px;
+			height:150px;
+			color:black;
+			
+	
+   	}
+	
+		.cardfront{
+			background:red;
+			align-items:center;
+			justify-content:center;
+			
+			display:flex;
+			
+					 -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+			
+			
+		}
+		.cardback{
+			text-align:center;
+			justify-content:center;
+			align-items:center;
+			display:flex;
+			background:blue;
+			
+					 -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+		}
+		.cardbox:hover .card{
+			transform: rotateY(180deg);
+	
+		}
+		.cardback{
+			transform: rotateY(180deg);
+		}
+		
+		.cardfront{
+			transform: rotateY(0deg);
+		}
+		.navbar{
+			z-index:99;
+		}
+		.backtop{
+		bottom:10px;
+		right:10px;
+		width:50px;
+		height:50px;
+		z-index:99; 
+		position:fixed;
+		text-align:center;
+			justify-content:center;
+			align-items:center;
+			display:flex;
+			border-radius:50px;
+		 }
+		.glyphicon-chevron-up{
+		color:white;
+		 font-size:26px;
+		}
+		#totop:hover .backtop{
+		background-color:grey;
+		}
+		.hero{
+			width:100%;
+			height:600px;  
+			background-position:center;
+			background-repeat:no-repeat;
+			background-size:cover;
+			align-items:center;
+			justify-content:center;
+			position:relative;
+			overflow:hidden;
+} 
+.hero img{
+		width:100%;
+		height:100%;
+		filter: blur(3px); 
+		filter:greyscale(100%);
+}
+.heroText{
+	color:white;
+	position:absolute;
+	bottom:40%;
+	right:35%;
+
+}
+	</style>
+</head>
+
+<body> 
+<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="hero">
+		<img src="backg.jpg">
+	<dive class="heroText">
+		<h1>WHEN I SEE YOU  AGAIN </hi>	
+		<h3 align="center">Wiz Khalifa ft. Charlie Puth.</h3>
+		<br>
+		<br> 
+		<center>
+		<a href="#" class="btn btn-danger btn-lg">Learn More...</a>
+		</center>	
+	</div>
+		
+</div>
+  <section class="section2">
+	<div class="">
+		<h1> Skewed background Section two</h1>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+	</div>
+</section>
+  <section class="section2">
+	<div class="">
+		<h1> Skewed background Section two</h1>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+	</div>
+</section>
+  <section class="section2">
+	<div class="">
+		<h1> Skewed background Section two</h1>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+	</div>
+</section>
+
+ 
+ 
+</div>
+<script>
+$(document).ready(function(){
+	 
+   
+		
+	$(window).scroll(function () {
+    var currentTop = $(window).scrollTop();
+		console.log(currentTop);
+	 	console.log("changes");
+		var newHeight = 600 - currentTop;
+		
+		console.log("changes"+newHeight);
+		$(".hero").css("height", newHeight+"px");
+ var wScroll= $(this).scrollTop();
+		  
+ $(".heroText").css({
+    "-webkit-transform":"translate(0px,"+ wScroll +"px)",
+    "-ms-transform":"translate(0px,"+ wScroll +"px)",
+    "transform":"translate(0px,"+ wScroll +"px)"
+  });
+	if(newHeight<=600){
+		$(".heroText").css("opacity", "1");
+ 		
+	}
+	if(newHeight<=550){
+		$(".heroText").css("opacity", ".8");
+ 		
+	}
+	if(newHeight<=500){
+		$(".heroText").css("opacity", ".5");
+ 		
+	}
+	if(newHeight<=450){
+		$(".heroText").css("opacity", ".3");
+ 		
+	}
+
+     
+});
+ 
+});   
+</script>
+
+</body>
+</html>
