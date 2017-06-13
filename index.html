@@ -331,9 +331,7 @@ padding: 5px 5px;
 	width:350px;
 	height:400px;
 }
-#aboutme{
-	background-color:black;
-	color:white;
+#aboutme{  
 	width:100%;
 	height:auto;
 }
@@ -379,10 +377,9 @@ padding: 5px 5px;
 .skillsImg img{
 	width:100px;
 	height:100px;
-}
-.skillsPaddn{ 
-}
-.skillsPaddn h3, .skillsPaddn p{
+	float:left;
+} 
+.skillsImg h3, .skillsImg p{
 	padding-left: 50px;
 	font-weight: bold;
 }
@@ -415,7 +412,6 @@ p, ul, li, a{
 	margin:70px auto;
 }  
 #myPic img{
-	//display:none;
 	height:275px !important;
 	width:275px !important;
 }
@@ -431,6 +427,22 @@ font-size:25px !important;
 padding: 5px 5px;
 margin:0px auto;
 }
+
+#heroTitle{
+	margin: 10px auto;
+}
+.section2{
+	padding:10px;
+} 	
+.skillsImg img{
+	width:50px;
+	height:50px;
+} 
+.skillsImg h3, .skillsImg p{
+	padding-left: 50px;
+	font-weight: bold;
+}
+
    }
 	</style>
 </head>
@@ -462,8 +474,6 @@ margin:0px auto;
 
 <div class="hero"> 
 	<div class="heroText">
-		
-		 
 		<div id="heroTitle" >
 		<h1><b>Pranit R. Shirke </b></hi>	
 		<h3 align="center">An aspiring full stack Web Developer.</h3>
@@ -540,37 +550,31 @@ margin:0px auto;
 </div>
  -->
  <div id="toskills"></div>
- <div id="skills" class=" section2">
+ <div id="skills" class="section2">
 	<h2> Technical Skills</h2>
 	<br>
-	<div class="row ">
-			<div class="col-lg-4 jumbotron">
-				<div class="col-lg-2 skillsImg">
+	<div class="row">
+			<div class="col-sm-4 jumbotron">
+				<div class="col-sm-12 skillsImg">
 					<img src="HTML.png" >
-				</div>
-				<div class="col-lg-10 skillsPaddn">
-					<h3>HTML 5</h3>
-					<p>Knowledge: Advanced to Expert.</p>
+				<h3>HTML 5</h3>
+				<p>Knowledge: Advanced to Expert.</p>
 				</div>
 
 			</div>
 			<div class="col-lg-4 jumbotron">
-				<div class="col-lg-2 skillsImg">
+				<div class="col-lg-12 skillsImg">
 					<img src="CSS.png" >
-				</div>
-				<div class="col-lg-10 skillsPaddn">
-					<h3>CSS 3</h3>
-					<p>Knowledge: Advanced to Expert.</p>
+				<h3>CSS 3</h3>
+			    <p>Knowledge: Advanced to Expert.</p>
 			
 				</div>
 
 			</div>
 			<div class="col-lg-4 jumbotron">
-				<div class="col-lg-2 skillsImg">
+				<div class="col-lg-12 skillsImg">
 					<img src="JQuery.png" >
-				</div>
-				<div class="col-lg-10 skillsPaddn">
-					<h3>JQuery 5</h3>
+				<h3>JQuery 5</h3>
 					<p>Knowledge: Intermediate to Advanced.</p>
 			
 				</div>
@@ -579,33 +583,27 @@ margin:0px auto;
 	</div>
 	<div class="row">
 			<div class="col-lg-4 jumbotron">
-				<div class="col-lg-2 skillsImg">
+				<div class="col-lg-12 skillsImg">
 					<img src="BS.svg" >
-				</div>
-				<div class="col-lg-10 skillsPaddn">
-					<h3> Bootstrap</h3>
+				 	<h3> Bootstrap</h3>
 					<p>Knowledge: Intermediate to Advanced.</p>
 			
 				</div>
 
 			</div>
 			<div class="col-lg-4 jumbotron">
-				<div class="col-lg-2 skillsImg">
+				<div class="col-lg-12 skillsImg">
 					<img src="AJS.png" >
-				</div>
-				<div class="col-lg-10 skillsPaddn">
-					<h3>AngularJS</h3>
+				<h3>AngularJS</h3>
 					<p>Knowledge: Advanced to Expert.</p>
 			
 				</div>
 
 			</div>
 			<div class="col-lg-4 jumbotron">
-				<div class="col-lg-2 skillsImg">
+				<div class="col-lg-12 skillsImg">
 					<img src="Java.png" >
-				</div>
-				<div class="col-lg-10  skillsPaddn">
-					<h3>JAVA 8</h3>
+				<h3>JAVA 8</h3>
 					<p>Knowledge: Advanced to Expert.</p>
 			
 				</div>
@@ -614,21 +612,17 @@ margin:0px auto;
 	</div>
 	<div class="row">
 			<div class="col-lg-4 jumbotron">
-				<div class="col-lg-2 skillsImg">
+				<div class="col-lg-12 skillsImg">
 					<img src="SPRING.png" >
-				</div>
-				<div class="col-lg-10 skillsPaddn">
-					<h3>Spring MVC </h3>
+				<h3>Spring MVC </h3>
 					<p>Knowledge: Advanced to Expert.</p>
 			
 				</div>
 
 			</div>
 			<div class="col-lg-4 jumbotron">
-				<div class="col-lg-2 skillsImg">
+				<div class="col-lg-12 skillsImg">
 					<img src="hibernate.svg" >
-				</div>
-				<div class="col-lg-10 skillsPaddn">
 					<h3>Hibernate</h3>
 					<p>Knowledge: Advanced to Expert.</p>
 			
@@ -636,11 +630,9 @@ margin:0px auto;
 
 			</div>
 			<div class="col-lg-4 jumbotron">
-				<div class="col-lg-2 skillsImg">
-					<img src="MYSQL.svg" >
-				</div>
-				<div class="col-lg-10 skillsPaddn">
-					<h3>MySQL</h3>
+				<div class="col-lg-12 skillsImg">
+					<img src="MySQL.svg" >
+				<h3>MySQL</h3>
 					<p>Knowledge: Advanced to Expert.</p>
 			
 				</div>
